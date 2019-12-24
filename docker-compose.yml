@@ -1,0 +1,16 @@
+version: '3'
+services:
+   catalog-module:
+     image: ranjeet1990/catalog-service
+     ports:
+       - "80:80"
+   redis:
+      image: redis:alpine
+   Review-Module:
+      image: ranjeet1990/review-service
+      ports:
+       - "90:90"
+   Order-Module:
+       image: ranjeet1990/order-service
+       ports:
+         - "100:100"
